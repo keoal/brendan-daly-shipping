@@ -38,7 +38,7 @@
   display: block;
   font-weight: 500;
   transition: color 0.2s, border-bottom-color 0.2s;
-  color: inherit;
+  color: var(--white);
   text-decoration: none;
   border-bottom: 2px solid;
   border-bottom-color: transparent;
@@ -47,7 +47,7 @@
 .NavLink:hover,
 .NavLink.active,
 .NavLink:focus {
-  color: var(--primary);
+  color: var(--lightGrey);
   border-bottom-color: currentColor;
 }
 
@@ -65,8 +65,8 @@
   position: absolute;
   top: calc(50% - 0.2rem);
   right: 1rem;
-  border-bottom: 2px solid var(--darkGrey);
-  border-right: 2px solid var(--darkGrey);
+  border-bottom: 2px solid var(--white);
+  border-right: 2px solid var(--white);
   display: block;
   height: 0.8rem;
   width: 0.8rem;
@@ -79,7 +79,7 @@
   top: 100%;
   left: 0;
   width: auto;
-  background: white;
+  background: #38b6ff;
   /* opacity: 0; */
   max-height: 0;
   overflow: hidden;
@@ -119,7 +119,7 @@
 
   .Nav--Links {
     display: none;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
     position: fixed;
     justify-content: center;
@@ -127,7 +127,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: white;
+    background: var(--primary);
     animation: Nav--Links 0.2s ease;
   }
 
@@ -177,7 +177,7 @@
 
   .Nav--GroupLinks {
     position: relative;
-    text-align: center;
+    text-align: left;
   }
 
   .Nav--GroupLinks .NavLink {
