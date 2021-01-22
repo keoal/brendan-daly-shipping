@@ -1,5 +1,5 @@
 .Nav {
-  background: white;
+  background: #005085;
   position: sticky;
   top: 0;
   z-index: 2;
@@ -100,7 +100,7 @@
 .Nav--GroupLink {
   display: block;
   position: relative;
-  width: 15rem;
+  width: 20rem;
 }
 
 @media (max-width: 600px) {
